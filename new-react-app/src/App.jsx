@@ -15,6 +15,10 @@ const App = () => {
             <Parent />
             <DataTable tableData={tableData} />
             <DataTable tableData={tableData2} />
+
+            <div className="sass-example">
+                This div uses styels from sass
+            </div>
         </div>
     );
 };

@@ -1,0 +1,18 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin td {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+@mixin th {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

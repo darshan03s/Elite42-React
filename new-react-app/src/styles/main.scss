@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+.sass-example {
+    @include flex-center;
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+table{
+    margin-top: 2em;
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    td{
+        @include td;
+    }
+    th{
+        @include th;
+        
+    }
+
+}
