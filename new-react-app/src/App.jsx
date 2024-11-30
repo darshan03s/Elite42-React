@@ -1,5 +1,5 @@
 import React from "react";
-import { Parent, DataTable } from "./Components";
+import { Parent, DataTable, Header } from "./Components";
 
 const App = () => {
     const tableData = [
@@ -12,6 +12,7 @@ const App = () => {
     ];
     return (
         <div className="App">
+            <Header/>
             <Parent />
             <DataTable tableData={tableData} />
             <DataTable tableData={tableData2} />

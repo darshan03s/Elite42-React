@@ -1,27 +1,56 @@
 @import "variables";
 @import "mixins";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .sass-example {
     @include flex-center;
     background-color: $primary-color;
     color: $secondary-color;
 }
 
-table{
+table {
     margin-top: 2em;
 }
 
-tr{
+tr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    td{
+    td {
         @include td;
     }
-    th{
+    th {
         @include th;
-        
     }
+}
 
+nav {
+    background-color: black;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1em;
+    margin-right: 1em;
+
+    a {
+        text-decoration: none;
+        color: wheat;
+        &:hover {
+            color: $primary-color;
+        }
+    }
 }
